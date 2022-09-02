@@ -21,8 +21,7 @@
         }
         footer {
             display: grid;            
-            /*grid-template-columns: repeat(4,2fr);*/
-            grid-row: 4 / 5;
+            grid-row: 2 / 3;
             grid-column: 1 / 4;
         }
         h1{
@@ -81,16 +80,14 @@
         .gridcontainer{
             display:grid;
             grid-template-columns: 80% 20%;
-            grid-template-rows: 100%;
+            grid-template-rows: 90% 10%;
             height: 100vh;
         }
-        /*.footer_sections{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 150px);
-            align-content:space-evenly;
-            justify-content:space-around;
-        }*/
+        .footer_sections{
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 20% 20% 20% 20%;
+            
+        }
         .sec1{
             background-color: aliceblue;
             grid-row: 1 / 2;
@@ -123,7 +120,6 @@
         <h2 class="base">[Основная часть]</h2>
         <div class="buttons">
         <button class="more3" title="" type="button"><h2>[Ещё 3]</h2></button>
-        
         <button class="more2" title="[Ещё 2]"><h2>[Ещё 2]</h2></button>
         <button class="more1" title="[Ещё 3]"><h2>[Ещё 1]</h2></button>
     </div>
@@ -134,6 +130,7 @@
 
 
 <footer> 
+<div class="footer_sections">
 <div class="sec1">
     <h3>[Секция футера 1]</h3>
 </div>
@@ -145,6 +142,7 @@
 </div>
 <div class="sec4">
     <h3>[Секция футера 4]</h3>
+</div>
 </div>
 
 </footer>   
