@@ -19,12 +19,16 @@ h1{
     display: grid;
     justify-content: center;
     align-content: flex-start;
+    font-size:3em;
+    font-family: Verdana, sans-serif;
+    font-weight: lighter;
+    text-decoration: dotted;
 }
 h2{
     display: grid;
     justify-content: center;
     align-content: flex-start;
-    font-size: 40px;
+    font-size: 2rem;
     font-family: Verdana, sans-serif;
     font-weight: lighter;
     text-decoration: dotted;
@@ -65,16 +69,37 @@ aside{
 .gridcontainer{
     display:grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 90% 10%;
-    height: 100vh;
+    grid-template-rows: 92% 8%;
+    height: 95vh;
 }
-.footer_sections{
-    display:grid;
-    grid-template-columns: repeat(auto-fill, 1200px);
-    grid-template-rows: repeat(auto-fill, 300px);
-    justify-content: space-evenly ;
+.footer {
+    display: grid;
+    grid-column: 1/4;
+    align-content: center;
+    justify-content: space-evenly;
 
 }
+
+.sec1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.sec2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.sec3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.sec4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
 .sec1, .sec2, .sec3,.sec4{
     background-color: aliceblue;
 }
